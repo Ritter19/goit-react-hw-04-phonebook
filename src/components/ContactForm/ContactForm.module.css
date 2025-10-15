@@ -1,0 +1,99 @@
+/* .form_container {
+  border: 1px solid black;
+  padding: 10px;
+  width: 30%;
+  border-radius: 4px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.input {
+  width: 90%;
+  padding: 5px 0;
+}
+
+.submitBtn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #5046e5;
+  color: white;
+  font-weight: 600;
+  width: 60%;
+}
+
+.submitBtn:hover {
+  background-color: #2e275d;
+} */
+.form_container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: 500;
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+  box-sizing: border-box; /* ✅ ensures padding/border are included */
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+.input,
+.submitBtn {
+  width: 100%; /* ✅ now inputs + button same width */
+  box-sizing: border-box; /* ✅ prevents "lagpas" */
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #5046e5;
+  box-shadow: 0 0 4px rgba(80, 70, 229, 0.5);
+}
+
+.submitBtn {
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #5046e5;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.submitBtn:hover {
+  background-color: #3a32a3;
+}
+
+.submitBtn:active {
+  transform: scale(0.97);
+}
+
+.error {
+  color: #d9534f;
+  font-size: 13px;
+  font-weight: 500;
+}
